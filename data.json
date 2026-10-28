@@ -1,0 +1,25 @@
+[
+    {
+        "name": "yesna",
+        "id": "101",
+        "age": "19",
+        "qualification": [
+            "bsc",
+            "bca"
+        ],
+        "email": "yesna@gmail.com",
+        "password": "12345"
+    },
+    {
+        "name": "afreen",
+        "id": "102",
+        "age": "18",
+        "qualification": [
+            "bsc",
+            "bca",
+            "bed"
+        ],
+        "email": "afreen@gmail.com",
+        "password": "12345"
+    }
+]
