@@ -3,3 +3,13 @@
 [2026-10-28 20:22:52.162762] [ERROR] - invalid id - 1234rt
 [2026-10-28 20:22:55.235166] [ERROR] - invalid age - werg
 [2026-10-28 20:22:56.227813] [ERROR] - invalid age - 1234r
+[2026-10-29 11:18:40.492837] [ERROR] - invalid name - 123
+[2026-10-29 11:19:06.086821] [ERROR] - invalid email - yedc
+[2026-10-29 11:20:42.529306] [ERROR] - invalid id - wedf
+[2026-10-29 11:26:05.934981] [ERROR] - invalid id - qw
+[2026-10-29 11:57:37.277490] [ERROR] - invalid email - 1
+[2026-10-29 11:57:37.789716] [ERROR] - invalid email - 1
+[2026-10-29 11:57:45.872929] [ERROR] - invalid password - 123
+[2026-10-29 12:09:27.045885] [ERROR] - invalid id - "C:\Program Files\Python314\python.exe" c:/Users/hp/OneDrive/Pictures/Desktop/python-task-upload/menu.py
+[2026-10-29 12:28:47.363085] [ERROR] - invalid password - 123
+[2026-10-29 12:32:44.664327] [ERROR] - invalid password - 123

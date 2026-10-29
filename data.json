@@ -1,25 +1,39 @@
 [
     {
         "name": "yesna",
+        "studentsid": "d631",
         "id": "101",
         "age": "19",
         "qualification": [
-            "bsc",
-            "bca"
+            "bsc"
         ],
         "email": "yesna@gmail.com",
-        "password": "12345"
+        "password": "1234",
+        "signup_time": "29-10-2026 12:34:37 PM"
     },
     {
-        "name": "afreen",
+        "name": "ibra",
+        "studentsid": "1292",
         "id": "102",
         "age": "18",
         "qualification": [
-            "bsc",
-            "bca",
-            "bed"
+            "ba"
         ],
-        "email": "afreen@gmail.com",
-        "password": "12345"
+        "email": "ibbu@gmail.com",
+        "password": "12345",
+        "signup_time": "29-10-2026 12:38:49 PM"
+    },
+    {
+        "name": "haniya",
+        "studentsid": "d032",
+        "id": "103",
+        "age": "20",
+        "qualification": [
+            "ba",
+            "bsc"
+        ],
+        "email": "hanni@gmail.com",
+        "password": "123456",
+        "signup_time": "29-10-2026 12:39:28 PM"
     }
 ]

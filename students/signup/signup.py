@@ -1,14 +1,16 @@
 import json
+import uuid
 from datetime import datetime
+
+
 with open("data.json","r+") as file:
     data=json.load(file)
     # print(data)
 
-
 def signup():
-     
-   
     dic={} 
+    
+    
     try:
         while True:
             dic["name"]=input("enter your name : ")
@@ -21,6 +23,13 @@ def signup():
             print("invalid name")
     except Exception as name:
         print("error",name)
+
+
+    dic["studentsid"] = uuid.uuid4().hex[:4]
+    print("Student UUID:", dic["studentsid"])
+        
+
+
     try:        
         while True:
             dic["id"]=input("enter your id : ")
@@ -69,23 +78,27 @@ def signup():
 
           
     try:
-        dic["password"]=input("enter your password : ")
-        if len(dic["password"])>=4 and dic["password"].isdigit():
-            pass 
-        else:
-            with open("error.log", "a") as file:
-                file.write(f"[{datetime.now()}] [ERROR] - invalid password - {dic['password']}\n")
-            print("incorrect password") 
+        while True:
+            dic["password"]=input("enter your password : ")
+            if len(dic["password"])>=4 and dic["password"].isdigit():
+                break
+            else:
+                with open("error.log", "a") as file:
+                    file.write(f"[{datetime.now()}] [ERROR] - invalid password - {dic['password']}\n")
+                print("incorrect password , please try again") 
     except Exception as password:
-        print("error",password)            
+        print("error",password) 
+        return           
 
-        dic["signup_time"] = datetime.now().strftime("%d-%m-%Y %I:%M:%S %p")
-        now = datetime.now()
-        print(now)
+    dic["signup_time"] = datetime.now().strftime("%d-%m-%Y %I:%M:%S %p")
+    now = datetime.now()
+    print(now)
+    data.append(dic)
 
     
     with open ("data.json","w") as file:
-        data.append(dic)
+            
         json.dump(data,file,indent=4)
 
     print("----signup successfully---- ")
+    # print(dic)

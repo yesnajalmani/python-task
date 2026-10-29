@@ -5,8 +5,9 @@ from students.search.search import search
 
 
 def menu():
-    try:        
-        while True:
+    while True:
+        try:        
+        
             print("======== menu =========")
             print("1. signup")
             print("2. login")
@@ -23,11 +24,11 @@ def menu():
                 print("exit")  
                 break
             else:
-                print("not exist")   
+                print("Invalid choice! Please enter 1 to 4")   
 
     # except ValueError:
     #     print("please enter a valid number")
 
-    except Exception as menu:
-        print("error",menu)
+        except Exception as menu:
+            print("error",menu)
 menu()        
