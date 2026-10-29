@@ -5,7 +5,7 @@ from datetime import datetime
 
 with open("data.json","r+") as file:
     data=json.load(file)
-    # print(data)
+    
 
 def signup():
     dic={} 
@@ -101,4 +101,4 @@ def signup():
         json.dump(data,file,indent=4)
 
     print("----signup successfully---- ")
-    # print(dic)
+  
